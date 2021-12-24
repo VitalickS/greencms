@@ -8,4 +8,4 @@ var process = Process.Start(new ProcessStartInfo
 });
 await process?.WaitForExitAsync();
 
-return process.ExitCode;
+return process?.ExitCode ?? default;

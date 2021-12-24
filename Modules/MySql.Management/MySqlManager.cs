@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Modules.TestModule
+namespace Modules.MySQL.Management
 {
     public class MySqlManager
     {

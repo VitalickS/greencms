@@ -20,17 +20,6 @@
           { "FieldRef": "BuildParameters" }
         ]
       }
-    },
-    "Run Serve (Developer Server)": {
-      "Name": "CmdCommand",
-      "DisplayName": "run devserver",
-      "Trigger": "manual",
-      "Settings": {
-        "Args": [
-          "npm",
-          "run serve"
-        ]
-      }
     }
   }
 }
