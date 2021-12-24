@@ -1,0 +1,14 @@
+{
+  "pipelines": {
+    "pipelineName1": {
+      "processors": {
+        "processor1": {
+          "templatePath": "TestProcessor",
+          "options": {
+
+          }
+        }
+      }
+    }
+  }
+}

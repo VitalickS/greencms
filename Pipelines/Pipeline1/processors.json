@@ -1,0 +1,13 @@
+{
+  "Settings": {
+    "Name": "Pipeline1",
+    "Description": "Test Pipeline"
+  },
+  "Processors": {
+    "TestProcessor": {
+      "Name": "TestProcessor",
+      "DisplayName": "TestProcessor Display Name",
+      "Settings": {}
+    }
+  }
+}
