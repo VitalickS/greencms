@@ -1,11 +1,25 @@
 {
   "pipelines": {
-    "pipelineName1": {
-      "processors": {
-        "processor1": {
-          "templatePath": "TestProcessor",
-          "options": {
-
+    "Frontend Development": {
+      "Settings": {
+        "Name": "VueFrontendManagement",
+        "Description": "Pipeline, that helps build and serve user's frontend project"
+      },
+      "Processors": {
+        "Install Packages": {
+          "Name": "CmdCommand",
+          "DisplayName": "install node_modules",
+          "Trigger": "manual",
+          "Settings": {
+            "Args": ["node", "install"]
+          }
+        },
+        "Run Serve (Developer Server)": {
+          "Name": "CmdCommand",
+          "DisplayName": "run devserver",
+          "Trigger": "manual",
+          "Settings": {
+            "Args": ["npm", "run serve"]
           }
         }
       }

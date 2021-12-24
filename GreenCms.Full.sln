@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{3D2BE7D6-3D90-43F2-BD82-904983329440}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Processors", "Processors", "{694ED457-1EEB-4252-A52E-31BA353B76F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pipelines", "Pipelines", "{991ED35E-B831-4EE8-AD04-7D6189F58375}"
+	ProjectSection(SolutionItems) = preProject
+		Pipelines\DotNetBuildManagement\DotNetBuildManagement.json = Pipelines\DotNetBuildManagement\DotNetBuildManagement.json
+		Pipelines\MySqlDatabaseManagement\MySqlDatabaseManagement.json = Pipelines\MySqlDatabaseManagement\MySqlDatabaseManagement.json
+		Pipelines\VueFrontendManagement\VueFrontendManagement.json = Pipelines\VueFrontendManagement\VueFrontendManagement.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySql.Management", "Modules\MySql.Management\MySql.Management.csproj", "{F70E0BDA-F0BE-4A87-B319-E059C77E9E0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySQLDbCreator", "Processors\MySQLDbCreator\MySQLDbCreator.csproj", "{9266DD55-E401-4A82-A69E-0F82B594FB3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4EA8314F-CA39-4731-B2D6-5C2F2B43E7DF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmdCommand", "Processors\CmdCommand\CmdCommand.csproj", "{92D65878-8E5C-47B5-8D26-2866E5850EEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F70E0BDA-F0BE-4A87-B319-E059C77E9E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70E0BDA-F0BE-4A87-B319-E059C77E9E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70E0BDA-F0BE-4A87-B319-E059C77E9E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70E0BDA-F0BE-4A87-B319-E059C77E9E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9266DD55-E401-4A82-A69E-0F82B594FB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9266DD55-E401-4A82-A69E-0F82B594FB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9266DD55-E401-4A82-A69E-0F82B594FB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9266DD55-E401-4A82-A69E-0F82B594FB3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D65878-8E5C-47B5-8D26-2866E5850EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D65878-8E5C-47B5-8D26-2866E5850EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D65878-8E5C-47B5-8D26-2866E5850EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D65878-8E5C-47B5-8D26-2866E5850EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F70E0BDA-F0BE-4A87-B319-E059C77E9E0E} = {3D2BE7D6-3D90-43F2-BD82-904983329440}
+		{9266DD55-E401-4A82-A69E-0F82B594FB3C} = {694ED457-1EEB-4252-A52E-31BA353B76F7}
+		{92D65878-8E5C-47B5-8D26-2866E5850EEE} = {694ED457-1EEB-4252-A52E-31BA353B76F7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEC71A99-F8A2-439D-A242-12FC97FFCF01}
+	EndGlobalSection
+EndGlobal

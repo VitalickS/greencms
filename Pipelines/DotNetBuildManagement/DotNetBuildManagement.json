@@ -1,0 +1,36 @@
+{
+  "Settings": {
+    "Name": "DotNetBuildManagement",
+    "Description": "Pipeline, that helps build backend .net project",
+    "Fields": {
+      "BuildParameters": {
+        "Type": "Text"
+      }
+    }
+  },
+  "Processors": {
+    "Install Packages": {
+      "Name": "CmdCommand",
+      "DisplayName": "dotnet build",
+      "Trigger": "manual",
+      "Settings": {
+        "Args": [
+          "dotnet",
+          "build",
+          { "FieldRef": "BuildParameters" }
+        ]
+      }
+    },
+    "Run Serve (Developer Server)": {
+      "Name": "CmdCommand",
+      "DisplayName": "run devserver",
+      "Trigger": "manual",
+      "Settings": {
+        "Args": [
+          "npm",
+          "run serve"
+        ]
+      }
+    }
+  }
+}
