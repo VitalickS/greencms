@@ -1,0 +1,25 @@
+{
+  "Settings": {
+    "Name": "MySqlDatabaseManagement",
+    "Description": "Pipeline that create and manage mysql database. Working with table synchronization",
+    "Fields": {
+      "ConnectionString": { "Type": "Connection" },
+      "DatabaseName": {
+        "Type": "Text",
+        "Required": true
+      }
+    }
+  },
+  "Processors": {
+    "MySQLDbCreator": {
+      "Name": "MySQLDbCreator",
+      "DisplayName": "Creates new database if not exists",
+      "Settings": {
+        "Args": [
+          { "FieldRef": "ConnectionString" },
+          { "FieldRef": "DatabaseName" }
+        ]
+      }
+    }
+  }
+}
