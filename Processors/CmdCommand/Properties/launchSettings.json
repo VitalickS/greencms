@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CmdCommand": {
+      "commandName": "Project",
+      "commandLineArgs": "node -p \"1+1 + Math.sin(10)\""
+    }
+  }
+}
