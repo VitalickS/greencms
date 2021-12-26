@@ -19,5 +19,5 @@ process.BeginOutputReadLine();
 
 
 await process?.WaitForExitAsync();
-
+Console.WriteLine("Command executed.");
 return process?.ExitCode ?? default;
